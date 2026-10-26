@@ -3,11 +3,6 @@
   <h1>VeneraM</h1>
 
 [![Flutter](https://img.shields.io/badge/flutter-3.44.3-blue)](https://flutter.dev/)
-![AI-Driven](https://img.shields.io/badge/AI--Driven-Claude%20|%20Codex%20|%20DeepSeek-6e47ff)
-[![License](https://img.shields.io/github/license/Kyosee/VeneraM)](https://github.com/Kyosee/VeneraM/blob/master/LICENSE)
-[![Stars](https://img.shields.io/github/stars/Kyosee/VeneraM?style=flat)](https://github.com/Kyosee/VeneraM/stargazers)
-[![Release](https://img.shields.io/github/v/release/Kyosee/VeneraM)](https://github.com/Kyosee/VeneraM/releases)
-
   <h3>中文 | <a href="README_EN.md">English</a></h3>
 </div>
 

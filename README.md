@@ -15,16 +15,16 @@ VeneraM 是一个 Fork 自 Venera 并在原版基础上进行维护与增强，�
 
 ## 新功能&优化
 
-- [x] WebDAV 备份与同步优化
+- [x] 图片超分功能
 - [x] Windows 与 Android APK 自动检查更新
-- [x] 连续章节无缝阅读
+- [x] 修复连续章节无缝阅读
 - [x] 本地、追更、收藏优化
 - [x] 新增任务功能，支持后台执行任务及相关视图界面
 - [x] 章节阅读状态变更
 - [x] 夜览模式
 - [x] 支持 Android 端后台下载、追更检查、导入/导出漫画
 - [x] 支持 Windows 端托盘最小化
-- [x] 简易画质增强功能
+- [x] 跨页分割
 - [x] 部分 UI 及使用体验调整优化
 - [x] 稍后阅读功能
 - [x] 支持自定义自动清理历史记录
@@ -41,22 +41,6 @@ VeneraM 是一个 Fork 自 Venera 并在原版基础上进行维护与增强，�
 各功能的配置步骤与操作方式详见 **[使用说明](doc/guide.zh.md)**。应用内亦可查阅：设置 → 关于 → 使用说明。
 
 ## 构建
-
-<details>
-<summary><b>本地构建</b></summary>
-
-1. 安装 [Flutter](https://flutter.dev/docs/get-started/install)
-2. 克隆仓库，执行 `flutter pub get`
-3. 按平台构建：
-
-```bash
-flutter build apk        # Android
-flutter build windows    # Windows
-flutter build linux      # Linux
-flutter build macos      # macOS
-```
-
-Android 需要先准备签名密钥，见下一节的「Android 签名」。
 
 </details>
 
@@ -108,13 +92,6 @@ keyPassword=你的 key 密码
 **注意：** 自己签名的 APK 与本仓库发布版签名不同，无法覆盖安装，需要先卸载。卸载会清除应用数据，请先在应用内导出备份。
 
 **4. 改掉检查更新指向的仓库**
-
-如果要把构建产物分发出去，必须先改 [`lib/pages/settings/about.dart`](lib/pages/settings/about.dart) 开头的两个常量：
-
-```dart
-const kUpdateRepoOwner = 'Kyosee';
-const kUpdateRepoName = 'VeneraM';
-```
 
 改成自己的用户名和仓库名。检查更新、下载更新包、更新日志、关于页的仓库链接都由这两个常量决定。
 

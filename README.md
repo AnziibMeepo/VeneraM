@@ -1,9 +1,6 @@
-<div align="center">
-  <img src="assets/app_icon.png" width="180" alt="VeneraM" />
   <h1>VeneraM</h1>
 
-[![Flutter](https://img.shields.io/badge/flutter-3.44.3-blue)](https://flutter.dev/)
-  <h3>中文 | <a href="README_EN.md">English</a></h3>
+  <h3>中文 | <a href="README_EN.md">
 </div>
 
 VeneraM 是一个 Fork 自 Venera 并在原版基础上进行维护与增强，免费开源的多平台漫画阅读应用。
